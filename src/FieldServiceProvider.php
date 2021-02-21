@@ -13,7 +13,9 @@ class FieldServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->mergeConfigFrom(__DIR__ . '/config/config.php', 'indotcodeField');
+
+        $this->loadViewsFrom(__DIR__.'/views', 'indotcodeField');
     }
 
     /**
@@ -23,6 +25,16 @@ class FieldServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->mergeConfigFrom(__DIR__ . '/config/config.php', 'indotcodeField');
 
+        $this->loadViewsFrom(__DIR__.'/views', 'indotcodeField');
+
+//        $this->publishes([
+//            __DIR__.'/config/config.php' => config_path('indotcodeField.php'),
+//        ]);
+//
+//        $this->publishes([
+//            __DIR__.'/views' => resource_path('views/indotcodeField'),
+//        ]);
     }
 }
