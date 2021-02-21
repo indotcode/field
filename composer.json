@@ -1,0 +1,19 @@
+{
+    "name": "indotcode/field",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "indotcode",
+            "email": "tinarskiy@bk.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "keywords": ["Laravel"],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Indotcode\\Field\\": "src/"
+        }
+    }
+}
